@@ -1,0 +1,17 @@
+{
+  "name": "myfitnesspal EASIER search",
+  "version": "0.1.0",
+  "description": "Find your foods faster on myfitnesspal",
+  "homepage_url": "https://github.com/jeffslofish/myfitnesspal-easier-search",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://*.myfitnesspal.com/*"],
+      "js": ["jquery-3.6.0.min.js", "script.js"]
+    }
+  ]
+}
