@@ -10,7 +10,7 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["https://*.myfitnesspal.com/*"],
+      "matches": ["https://*.myfitnesspal.com/*/add_to_diary*"],
       "js": ["jquery-3.6.0.min.js", "script.js"]
     }
   ]

@@ -21,4 +21,6 @@ function filterFoods(e) {
     .hide()
 }
 
-searchBox.addEventListener("keyup", filterFoods)
+if (searchBox) {
+  searchBox.addEventListener("keyup", filterFoods)
+}
