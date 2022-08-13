@@ -19,6 +19,12 @@ function filterFoods(e) {
     .filter(`:not(:icontains(${searchText}))`)
     .parent()
     .hide()
+
+  // Unhide any items that are checked
+  $("table tbody tr td:nth-child(1) input.checkbox:checked")
+    .parent()
+    .parent()
+    .show()
 }
 
 if (searchBox) {
